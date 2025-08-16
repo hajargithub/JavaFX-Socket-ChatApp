@@ -1,3 +1,5 @@
+package first_test;
+
 import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
@@ -20,7 +22,7 @@ public class SocketThread extends Thread {
         Scanner sc= new Scanner(System.in);
         String msg;
         int mystery_nb;
-        pw.println("Welcome dear Client. Guess the mystery number!!!");
+        pw.println("Welcome dear first_test.Client. Guess the mystery number!!!");
 
         do{
             mystery_nb= Integer.parseInt(br.readLine());

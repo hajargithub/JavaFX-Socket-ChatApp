@@ -1,3 +1,5 @@
+package first_test;
+
 import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
@@ -12,7 +14,7 @@ public class Client {
  Scanner sc= new Scanner(System.in);
  String msg;
  do{
-     System.out.println("Client:  ");
+     System.out.println("first_test.Client:  ");
      msg=sc.nextLine();
      pw.println(msg);
      // Si le message envoyé est "bye", on arrête la communication
@@ -20,7 +22,7 @@ public class Client {
          break;
      }
      msg=br.readLine();
-     System.out.println("Serveur: " + msg);
+     System.out.println("first_test.Serveur: " + msg);
  }while(!msg.equals("bye"));
         is.close();
         os.close();
